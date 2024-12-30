@@ -1320,7 +1320,7 @@ local function Decompile(bytecode)
                             -- shared upvalues >= 0
 
                             if SHOW_MISC_OPERATIONS then
-                                protoOutput ..= "[DUPCLOSURE]\n"
+                                protoOutput ..= "-- [DUPCLOSURE]\n"
                             end
 
                             local nextProto = protoTable[proto.constsTable[D + 1].value - 1]
